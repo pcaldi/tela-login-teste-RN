@@ -28,6 +28,8 @@ export function Home() {
         placeholder='E-mail'
         onChangeText={setEmail}
         keyboardType='email-address'
+        onSubmitEditing={() => handleSignIn}
+        returnKeyType='done'
       />
       <TextInput
         style={styles.input}
